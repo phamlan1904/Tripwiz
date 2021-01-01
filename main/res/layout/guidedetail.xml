@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="77dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="77dp"-->
+<!--            android:background="@color/colorButtonEditProfile">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="2019/01/15 東京ー新宿"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="20dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/button7"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/textView4"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/button7"-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="34dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:background="@drawable/bordersearchword"-->
+<!--                android:text="保存"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="13dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.627" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/textView4"-->
+<!--                android:layout_width="54dp"-->
+<!--                android:layout_height="34dp"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:background="@drawable/bordersearchword"-->
+<!--                android:text="戻る"-->
+<!--                android:textColor="#000"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.627" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewTitle"-->
+<!--            android:layout_width="19dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="タイトル"-->
+<!--            android:textColor="#000" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextTitle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:text="東京-新宿" />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="59dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewDate"-->
+<!--            android:layout_width="17dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="日付"-->
+<!--            android:textColor="#000" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editText2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:text="" />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="59dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewLocation"-->
+<!--            android:layout_width="99dp"-->
+<!--            android:layout_height="18dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_weight=""-->
+<!--            android:text="場所"-->
+<!--            android:textColor="#000" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextLocation1"-->
+<!--            android:layout_width="137dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight=""-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:text="" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="～" />-->
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextLocation2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight=""-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:text="" />-->
+<!--    </LinearLayout>-->
+
+
+</LinearLayout>

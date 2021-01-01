@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingTop="5dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="107dp"
+        android:layout_height="188dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image_view"
+            android:layout_width="72dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="92dp" />
+
+        <TextView
+            android:id="@+id/user_name_view"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="51dp"
+            android:gravity="center"
+            android:textColor="#00f"
+            android:textSize="18dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="15dp"
+            android:maxHeight="20dp"
+            android:numStars="5"
+            android:rating="4" />
+
+        <Button
+            android:id="@+id/btnRequest"
+            android:layout_width="94dp"
+            android:layout_height="22dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="153dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/border1"
+            android:gravity="center"
+            android:text="request"
+            android:textSize="10dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<resources>
+    <!--新規登録-->
+    <string name="app_name">TripWiz</string>
+    <string name="facebook_app_id">473694246571043</string>
+    <string name="fb_login_protocol_scheme">fb473694246571043</string>
+    <string name="title_activity_template">template</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_tamplate">TamplateActivity</string>
+    <string name="textViewUserName">UserName</string>
+    <string name="editTextName"></string>
+    <string name="title_guide">Guide</string>
+    <string name="title_talk">Talk</string>
+    <string name="title_myPage">MyPage</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_person">Person</string>
+    <string name="title_sharp">Sharp</string>
+    <string name="title_location">Location</string>
+    <string name="textViewMailAddress">メールアドレス</string>
+    <string name="textViewPw">パスワード</string>
+    <string name="textViewName">氏名</string>
+    <string name="textViewGender">性別</string>
+    <string name="radioButtonMale">男</string>
+    <string name="radioButtonFemale">女</string>
+    <string name="textViewNationality">国籍</string>
+    <string name="textViewAge">年齢層</string>
+    <string name="buttonSignUp">登録</string>
+
+    <!--プロフィール画面-->
+    <string name="textViewUserNameProfile">NIHON DENSHI</string>
+    <string name="buttonEditProfile">情報編集</string>
+    <string name="textViewLanguage">言語：</string>
+    <string name="textViewArea">案内可能エリア：</string>
+    <string name="textViewDayOfTheWeek">案内可能曜日：</string>
+    <string name="textViewPr">自己紹介</string>
+    <string name="textViewMon">月</string>
+    <string name="textViewTue">火</string>
+    <string name="textViewWed">水</string>
+    <string name="textViewThu">木</string>
+    <string name="textViewFri">金</string>
+    <string name="textViewSat">土</string>
+    <string name="textViewSun">日</string>
+
+
+    /**ガイド表示用**/
+    <string name="description">picture</string>
+
+
+    <string name="spinnerYear"></string>
+    <string name="spinnerMonth"></string>
+    <string name="spinnerDay"></string>
+    <string name="spinnerNationality"></string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  タイムライン画面  -->
+    <string name="buttonSearchWord">検索</string>
+    <!-- 　国リスト  -->
+    <string-array name="nationality_array">
+        <item>Japan</item>
+        <item>China</item>
+        <item>Korea</item>
+        <item>France</item>
+        <item>America</item>
+        <item>Thailand</item>
+        <item>Taiwan</item>
+        <item>Singapore</item>
+    </string-array>
+
+    <!--  ガイド検索  -->
+    <string name="textViewSearchGuide">ガイド検索</string>
+    <string name="buttonSearchGuide">検索</string>
+    <string name="textViewSearchGuideResult">ガイド一覧</string>
+
+</resources>

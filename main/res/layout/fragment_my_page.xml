@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:background="@color/colorPrimary">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewUser"
+                android:layout_width="78dp"
+                android:layout_height="68dp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewUserName"
+                android:layout_width="108dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/textViewUserNameProfile"
+                android:textColor="#000"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewUser"
+                app:layout_constraintVertical_bias="0.14" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.394"
+                app:layout_constraintStart_toEndOf="@+id/imageViewUser"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.137" />
+
+            <TextView
+                android:id="@+id/textViewRate"
+                android:layout_width="55dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="60dp"
+                android:text="1.0"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewUserName"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+                app:layout_constraintVertical_bias="0.347" />
+
+            <Switch
+                android:id="@+id/switchUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="16dp"
+                android:text="guide"
+                android:textOff="ユーザーです"
+                android:textOn="ガイドです"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewRate"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageViewNationalFlag"
+                android:layout_width="89dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewUser"
+                app:layout_constraintVertical_bias="0.8"
+                app:srcCompat="@drawable/guideicon" />
+
+            <EditText
+                android:id="@+id/editTexteName"
+                android:layout_width="112dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textSize="15dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewNationalFlag"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewUser"
+                app:layout_constraintVertical_bias="0.454" />
+
+            <!--            <Button-->
+            <!--                android:id="@+id/buttonFeedback"-->
+            <!--                android:layout_width="91dp"-->
+            <!--                android:layout_height="56dp"-->
+            <!--                android:layout_marginEnd="32dp"-->
+            <!--                android:layout_marginBottom="16dp"-->
+            <!--                android:text="フィードバック"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/selectJobBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="20dp"
+                    android:text="職種："
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/edit_selectJob"
+                    android:layout_width="186dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="20dp"
+                    android:text="未選択"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/entry_selectJob"
+                    android:layout_width="186dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="20dp"
+                    android:text="未選択"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/selectLangsBox"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/textViewLanguage"
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/edit_selectLang"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="20dp"
+                    android:text="未選択"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/entry_selectLang"
+                    android:layout_width="144dp"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="20dp"
+                    android:text="選択完了"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/selectAreasBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/textViewArea"
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/edit_selectArea"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="20dp"
+                    android:text="未選択"
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/entry_selectArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="20dp"
+                    android:text="選択完了"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="519dp">
+
+                <TextView
+                    android:id="@+id/textViewDayOfTheWeek"
+                    android:layout_width="118dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="-40dp"
+                    android:text="@string/textViewDayOfTheWeek"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.048"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TableLayout
+                    android:id="@+id/editDayTableLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center"
+                    android:stretchColumns="0,1,2,3,4,5,6"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDayOfTheWeek">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="#000000">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="@string/textViewMon"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="@string/textViewTue"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="@string/textViewWed"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="@string/textViewThu"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="4"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="@string/textViewFri"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="5"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="@string/textViewSat"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="6"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="@string/textViewSun"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/edit_day_table"
+                        android:layout_width="fill_parent"
+                        android:layout_height="76dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="#000000"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/mon_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="◯"
+                            android:textSize="24dp" />
+
+                        <Button
+                            android:id="@+id/tues_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="◯"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <Button
+                            android:id="@+id/wed_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="◯"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <Button
+                            android:id="@+id/thurs_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="◯"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <Button
+                            android:id="@+id/fri_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="4"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="◯"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <Button
+                            android:id="@+id/saturs_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="5"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="◯"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <Button
+                            android:id="@+id/sun_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="6"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="◯"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/entry_day_table"
+                        android:layout_width="fill_parent"
+                        android:layout_height="76dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="#000000"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/entry_mon_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="×"
+                            android:textSize="24dp" />
+
+                        <Button
+                            android:id="@+id/entry_tues_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="×"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <Button
+                            android:id="@+id/entry_wed_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="×"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <Button
+                            android:id="@+id/entry_thurs_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="×"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <Button
+                            android:id="@+id/entry_fri_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="4"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="×"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <Button
+                            android:id="@+id/entry_saturs_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="5"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="×"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <Button
+                            android:id="@+id/entry_sun_day"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="6"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="×"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+                    </TableRow>
+
+                </TableLayout>
+
+
+                <EditText
+                    android:id="@+id/editTextProfile"
+                    android:layout_width="302dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/border"
+                    android:inputType="textMultiLine"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.533"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+                <TextView
+                    android:id="@+id/PrTextProfile"
+                    android:layout_width="366dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/border"
+                    android:text="よろしくお願いします。料金 ###円から案内可能です。可能エリア　＃＃＃区と＃＃県案内できます。交通費負担お願い致します。
+"
+                    android:textSize="15sp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.578"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/textViewPr"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editDayTableLayout" />
+
+                <Button
+                    android:id="@+id/buttonVisibleProfile"
+                    android:layout_width="149dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/border1"
+                    android:text="編集"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/PrTextProfile"
+                    app:layout_constraintVertical_bias="0.417" />
+
+                <Button
+                    android:id="@+id/buttonGoneProfile"
+                    android:layout_width="155dp"
+                    android:layout_height="33dp"
+                    android:background="#fac"
+                    android:text="登録"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/PrTextProfile"
+                    app:layout_constraintVertical_bias="0.421" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
